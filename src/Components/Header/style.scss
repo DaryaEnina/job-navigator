@@ -1,0 +1,47 @@
+.header {
+  width: 100%;
+  height: 106px;
+  position: relative;
+  .header__wrapper {
+    width: 100%;
+    height: 65px;
+    background: #95a9f0;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 16px;
+    .header__logo {
+      width: 210px;
+      height: 106px;
+      background: #001bb7;
+      border-radius: 0px 0px 100px 0px;
+      img {
+        width: 173px;
+        height: 90px;
+      }
+    }
+    .header-right {
+      display: flex;
+      height: 55px;
+      column-gap: 56px;
+      padding: 5px 0;
+      .header__nav {
+        display: flex;
+        ul {
+          display: flex;
+          column-gap: 90px;
+          li {
+            width: 89.02px;
+            height: 100%;
+            border-bottom: 3px solid #fff5f5;
+          }
+        }
+      }
+      .header__avatar {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background: #ffffff;
+      }
+    }
+  }
+}

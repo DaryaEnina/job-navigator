@@ -1,0 +1,37 @@
+.navbar {
+  width: 78px;
+  height: 210px;
+  background: #95a9f0;
+  border-radius: 0px 0px 40px 40px;
+  position: relative;
+  .navbar__wrapper {
+    .navbar__list {
+      padding-top: 35px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 31px;
+      align-items: center;
+      li {
+        width: 58px;
+        height: 56px;
+        background: #ffffff;
+        border-radius: 50%;
+      }
+    }
+  }
+  .navbar__arrow {
+    position: absolute;
+    width: 22px;
+    height: 15px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #d9d9d9;
+    opacity: 0.5;
+    border-radius: 50px 50px 0px 0px;
+    img {
+      position: absolute;
+    }
+  }
+}
