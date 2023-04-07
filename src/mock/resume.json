@@ -1,0 +1,19 @@
+{
+  "id": "0",
+  "position": "Frontend developer",
+  "skills": [
+    "HTML",
+    "CSS",
+    "SASS",
+    "SCSS",
+    "JavaScript",
+    "MUI",
+    "Git",
+    "React",
+    "Redux",
+    "TypeScript"
+  ],
+  "experience": "Без опыта",
+  "english": "B1",
+  "employment": "Полная занятость"
+}

@@ -1,0 +1,147 @@
+[
+  {
+    "id": "0",
+    "position": "Junior Frontend Developer (Angular)",
+    "skills": ["HTML", "CSS", "JavaScript", "TypeScript", "Angular"],
+    "experience": "1–3 года",
+    "english": "",
+    "employment": "Полная занятость",
+    "company": "Программные решения плюс",
+    "link": "https://rabota.by/vacancy/78510176?from=vacancy_search_list&query=Frontend"
+  },
+  {
+    "id": "1",
+    "position": "Front-end Developer (React)",
+    "skills": [
+      "JavaScript",
+      "TypeScript",
+      "Cloud Native",
+      "Webpack",
+      "React",
+      "AWS",
+      "MS Azure",
+      "GCP"
+    ],
+    "experience": "3–6 лет",
+    "english": "",
+    "employment": "Удаленная работа",
+    "company": "АЛЬФА-БАНК",
+    "link": "https://rabota.by/vacancy/78612303?from=vacancy_search_list&query=Frontend"
+  },
+  {
+    "id": "2",
+    "position": "Junior Frontend developer",
+    "skills": ["JavaScript", "TypeScript", "HTML", "CSS", "Git", "Angular"],
+    "experience": "Без опыта",
+    "english": "",
+    "employment": "Полная занятость",
+    "company": "Группа Компаний Армтек",
+    "link": "https://rabota.by/vacancy/78583470?from=vacancy_search_list&query=Frontend"
+  },
+  {
+    "id": "3",
+    "position": "Middle Front-end developer",
+    "skills": [
+      "JavaScript",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "Git",
+      "Angular",
+      "SASS"
+    ],
+    "experience": "1–3 года",
+    "english": "",
+    "employment": "Полная занятость",
+    "company": "Группа Компаний Армтек",
+    "link": "https://rabota.by/vacancy/70772305?from=vacancy_search_list&query=Frontend"
+  },
+  {
+    "id": "4",
+    "position": "Front-end Developer (React)",
+    "skills": [
+      "JavaScript",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "React",
+      "Redux",
+      "Jest",
+      "React-Testing library"
+    ],
+    "experience": "3–6 лет",
+    "english": "B2",
+    "employment": "Полная занятость",
+    "company": "Andersen",
+    "link": "https://rabota.by/vacancy/78689281?from=vacancy_search_list&query=Frontend"
+  },
+  {
+    "id": "5",
+    "position": "Senior Frontend Developer (React/Typescript)",
+    "skills": [
+      "Javascript",
+      "HTML",
+      "CSS",
+      "MUI",
+      "Git",
+      "React",
+      "TypeScript",
+      "Graphql"
+    ],
+    "experience": "более 6 лет",
+    "english": "",
+    "employment": "Удаленная работа",
+    "company": "Selltech LLC",
+    "link": "https://hh.ru/vacancy/78003225?from=vacancy_search_list&query=Frontend"
+  },
+  {
+    "id": "6",
+    "position": "Frontend Developer ",
+    "skills": [
+      "JavaScript",
+      "Vue.JS",
+      "React",
+      "Webpack",
+      "HTML",
+      "CSS",
+      "Git",
+      "CI/CD"
+    ],
+    "experience": "3–6 лет",
+    "english": "",
+    "employment": "Полная занятость",
+    "company": "ООО Ай Ди Эй Технолоджис",
+    "link": "https://rabota.by/vacancy/78188271?from=vacancy_search_list&query=Frontend"
+  },
+  {
+    "id": "7",
+    "position": "Middle Front-end Developer",
+    "skills": [
+      "HTML",
+      "CSS",
+      "SASS",
+      "SCSS",
+      "JavaScript",
+      "jQuery",
+      "Gulp",
+      "Grunt",
+      "Webpack",
+      "Git"
+    ],
+    "experience": "1–3 года",
+    "english": "",
+    "employment": "Полная занятость",
+    "company": "Медиа Лайн",
+    "link": "https://rabota.by/vacancy/78507159?from=vacancy_search_list&query=Frontend"
+  },
+  {
+    "id": "8",
+    "position": "Front-end разработчик junior",
+    "skills": ["HTML", "CSS", "SASS", "SCSS", "JavaScript"],
+    "experience": "Без опыта",
+    "english": "C1",
+    "employment": "Удаленная работа",
+    "company": "Nti.team",
+    "link": "https://hh.ru/vacancy/78746444?from=vacancy_search_list&query=Frontend"
+  }
+]

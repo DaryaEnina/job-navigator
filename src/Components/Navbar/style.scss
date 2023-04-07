@@ -3,7 +3,7 @@
   height: 210px;
   background: #95a9f0;
   border-radius: 0px 0px 40px 40px;
-  position: relative;
+  position: absolute;
   .navbar__wrapper {
     .navbar__list {
       padding-top: 35px;
@@ -21,17 +21,14 @@
   }
   .navbar__arrow {
     position: absolute;
-    width: 22px;
-    height: 15px;
-    bottom: 0;
+    width: 20px;
+    height: 10px;
+    bottom: 2px;
     left: 0;
     right: 0;
     margin: auto;
-    background: #d9d9d9;
-    opacity: 0.5;
-    border-radius: 50px 50px 0px 0px;
-    img {
-      position: absolute;
-    }
+    background-image: url("../../assets/svg/Arrow_navbar.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }

@@ -1,4 +1,3 @@
-import arrow from "../../assets/svg/Arrow_navbar.svg";
 import "./style.scss";
 
 const Navbar = () => {
@@ -10,9 +9,7 @@ const Navbar = () => {
           <li></li>
         </ul>
       </nav>
-      <div className="navbar__arrow">
-        <img src={arrow} alt="" />
-      </div>
+      <div className="navbar__arrow"></div>
     </aside>
   );
 };
