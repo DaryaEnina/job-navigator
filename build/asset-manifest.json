@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3e723ad8.css",
+    "main.js": "/static/js/main.bdc69ad2.js",
+    "static/media/Lato-Black.ttf": "/static/media/Lato-Black.0f56360fd2c505dd13fa.ttf",
+    "static/media/Lato-Regular.ttf": "/static/media/Lato-Regular.2b7b7f6c8554ad96436b.ttf",
+    "static/media/Lato-Light.ttf": "/static/media/Lato-Light.db4ac5122b70c74fd850.ttf",
+    "static/media/logo.svg": "/static/media/logo.a3ef1a501f403c75a200d17cf4cc402a.svg",
+    "static/media/Arrow_navbar.svg": "/static/media/Arrow_navbar.5735efe7770c28cc7701.svg",
+    "index.html": "/index.html",
+    "static/media/checkbox.svg": "/static/media/checkbox.0d3bc51fb69b8ed6f763.svg"
+  },
+  "entrypoints": [
+    "static/css/main.3e723ad8.css",
+    "static/js/main.bdc69ad2.js"
+  ]
+}
