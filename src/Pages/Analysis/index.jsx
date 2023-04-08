@@ -249,7 +249,7 @@ const Analysis = () => {
                 );
               })}
             </ul>
-            <h2>Для полного соответствия Вам стоит:</h2>
+            {/* <h2>Для полного соответствия Вам стоит:</h2>
             <ul>
               {needSkills.length ? (
                 <li className="dotted">{`дополнительно выучить: ${needSkills.join(
@@ -266,7 +266,7 @@ const Analysis = () => {
             </ul>
             <li className="result__links">
               <Link to=""> ссылка на курсы</Link>
-            </li>
+            </li> */}
           </div>
         ) : (
           <div className="result">
@@ -288,31 +288,33 @@ const Analysis = () => {
                 );
               })}
             </ul>
-            <h2>Для полного соответствия Вам стоит:</h2>
+            <h2>
+              {secondRound.length > 1
+                ? "В данных вакансиях перечислены навыки, не указанные в Вашей анкете "
+                : "В данной вакансии перечислены навыки, не указанные в Вашей анкете: "}
+            </h2>
             <ul>
               {needSkillsSecondRound.length > 0 ? (
-                <li>{`дополнительно выучить: ${needSkillsSecondRound.join(
-                  ", "
-                )}`}</li>
+                <li>{`технологии: ${needSkillsSecondRound.join(", ")}`}</li>
               ) : (
                 ""
               )}
               {neeвEnglishSecondRound.length > 0 ? (
-                <li>{`поднять уровень английского до: ${neeвEnglishSecondRound.toString()}`}</li>
+                <li>{`уровни английского: ${neeвEnglishSecondRound.toString()}`}</li>
               ) : (
                 ""
               )}
             </ul>
             <li className="result__links">
-              <Link to=""> ссылка на курсы</Link>
+              <Link to="https://rs.school/">Вам может помочь этот курс</Link>
             </li>
           </div>
         )}
         {thirdRound.length > 0 && (
           <div className="result">
             <h2>
-              <span>{percentThirdRound}% </span>вакансий будут доступны вам при
-              получении достаточного опыта
+              <span>{percentThirdRound}% </span>вакансий будут доступны Вам при
+              переходе на следующий уровень
             </h2>
             <ul>
               {thirdRound.map((el) => {
@@ -323,23 +325,25 @@ const Analysis = () => {
                 );
               })}
             </ul>
-            <h2>Для полного соответствия Вам стоит:</h2>
+            <h2>
+              {thirdRound.length > 1
+                ? "В данных вакансиях перечислены навыки, не указанные в Вашей анкете "
+                : "В данной вакансии перечислены навыки, не указанные в Вашей анкете: "}
+            </h2>
             <ul>
               {needSkillsThirdRound.length > 0 ? (
-                <li>{`дополнительно выучить: ${needSkillsThirdRound.join(
-                  ", "
-                )}`}</li>
+                <li>{`технологии: ${needSkillsThirdRound.join(", ")}`}</li>
               ) : (
                 ""
               )}
               {needEnglishThirdRound.length > 0 ? (
-                <li>{`поднять уровень английского до: ${needEnglish.toString()}`}</li>
+                <li>{`уровень английского: ${needEnglish.toString()}`}</li>
               ) : (
                 ""
               )}
             </ul>
             <li className="result__links">
-              <Link to=""> ссылка на курсы</Link>
+              <Link to="https://rs.school/">Вам может помочь этот курс</Link>
             </li>
           </div>
         )}
