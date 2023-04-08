@@ -80,7 +80,6 @@ const Resume = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(checkValidation());
     if (checkValidation()) {
       resume.position = position;
       resume.skills = stack;

@@ -10,6 +10,10 @@
     align-items: center;
     row-gap: 90px;
   }
+  h2 {
+    font: 900 40px/48px Lato;
+    color: #000000;
+  }
   .analysis__graph {
     position: relative;
     .analysis__graph-el {

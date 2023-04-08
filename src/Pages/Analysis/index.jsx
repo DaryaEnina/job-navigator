@@ -36,6 +36,9 @@ const Analysis = () => {
   /////////////////////////////////////Анализ///////////////////////////////////
 
   const analyce = useCallback((candidate, vacancies) => {
+    if (!candidate) {
+      return;
+    }
     const match = [];
     const skillsSecondRound = [];
     const skills = [];
@@ -153,12 +156,11 @@ const Analysis = () => {
     return () => clearInterval(intervalId);
   }, [borderSize, percentExp]);
 
-  if (!matchesExperience.length) {
+  if (!resume.experience) {
     return (
-      <>
-        <h1>Дорогой соискатель!</h1>
-        <h2>К сожалению, вакансии не найдены...</h2>
-      </>
+      <section className="analysis">
+        <h2>Заполните анкету</h2>
+      </section>
     );
   }
 
@@ -300,7 +302,7 @@ const Analysis = () => {
                 ""
               )}
               {neeвEnglishSecondRound.length > 0 ? (
-                <li>{`уровни английского: ${neeвEnglishSecondRound.toString()}`}</li>
+                <li>{`уровни английского, которые следует пройти: ${neeвEnglishSecondRound.toString()}`}</li>
               ) : (
                 ""
               )}
@@ -337,7 +339,7 @@ const Analysis = () => {
                 ""
               )}
               {needEnglishThirdRound.length > 0 ? (
-                <li>{`уровень английского: ${needEnglish.toString()}`}</li>
+                <li>{`уровень английского, которые следует пройти: ${needEnglish.toString()}`}</li>
               ) : (
                 ""
               )}
