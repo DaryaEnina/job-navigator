@@ -26,6 +26,9 @@
       padding: 5px 0;
       .header__nav {
         display: flex;
+        @media screen and (max-width: 785px) {
+          display: none;
+        }
         ul {
           display: flex;
           column-gap: 90px;

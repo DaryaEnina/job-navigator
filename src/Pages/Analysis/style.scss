@@ -5,6 +5,11 @@
   justify-content: center;
   padding-top: 50px;
   padding-left: 78px;
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 90px;
+  }
   .analysis__graph {
     position: relative;
     .analysis__graph-el {
@@ -12,14 +17,42 @@
     .one {
       width: 412px;
       height: 412px;
+      @media screen and (max-width: 1024px) {
+        width: 352px;
+        height: 352px;
+      }
+      @media screen and (max-width: 505px) {
+        width: 247px;
+        height: 247px;
+      }
+      @media screen and (max-width: 405px) {
+        width: 222px;
+        height: 222px;
+      }
     }
     .two {
       width: 267px;
       height: 267px;
+      @media screen and (max-width: 1024px) {
+        width: 207px;
+        height: 207px;
+      }
+      @media screen and (max-width: 505px) {
+        width: 157px;
+        height: 157px;
+      }
     }
     .three {
       width: 154px;
       height: 154px;
+      @media screen and (max-width: 1024px) {
+        width: 94px;
+        height: 94px;
+      }
+      @media screen and (max-width: 505px) {
+        width: 80px;
+        height: 80px;
+      }
     }
     .frame1 {
       position: absolute;
@@ -31,6 +64,24 @@
       border: 1px dashed #000000;
       font: 900 40px/48px Lato;
       color: #000000;
+      @media screen and (max-width: 1024px) {
+        left: -27px;
+      }
+
+      @media screen and (max-width: 785px) {
+        left: -27px;
+      }
+      @media screen and (max-width: 505px) {
+        width: 77px;
+        height: 52px;
+        font: 900 33px/48px Lato;
+        left: -57px;
+      }
+      @media screen and (max-width: 405px) {
+        left: -65px;
+        bottom: -68px;
+      }
+
       &::before {
         content: "";
         position: absolute;
@@ -38,6 +89,9 @@
         height: 2px;
         border-top: 1px dashed #000000;
         left: 100%;
+        @media screen and (max-width: 505px) {
+          width: 111px;
+        }
       }
       &::after {
         content: "";
@@ -47,6 +101,9 @@
         border-left: 1px dashed #000000;
         left: 249%;
         bottom: 50%;
+        @media screen and (max-width: 505px) {
+          height: 111px;
+        }
       }
     }
     .frame2 {
@@ -61,6 +118,22 @@
       color: #494949;
       top: -57px;
       right: 17px;
+      @media screen and (max-width: 1024px) {
+        top: -60px;
+        left: 320px;
+      }
+      @media screen and (max-width: 785px) {
+        left: 318px;
+      }
+      @media screen and (max-width: 505px) {
+        width: 77px;
+        height: 52px;
+        font: 900 33px/48px Lato;
+        left: 161px;
+      }
+      @media screen and (max-width: 405px) {
+        left: 152px;
+      }
       &::before {
         content: "";
         position: absolute;
@@ -69,6 +142,9 @@
         border-top: 1px dashed #494949;
         left: 27px;
         top: 459%;
+        @media screen and (max-width: 405px) {
+          top: 395%;
+        }
       }
       &::after {
         content: "";
@@ -78,6 +154,12 @@
         border-left: 1px dashed #494949;
         left: 44px;
         top: 104%;
+        @media screen and (max-width: 505px) {
+          height: 179px;
+        }
+        @media screen and (max-width: 405px) {
+          height: 143px;
+        }
       }
     }
     .frame3 {
@@ -92,6 +174,25 @@
       color: #8d8d8d;
       top: 379px;
       right: -44px;
+      @media screen and (max-width: 1024px) {
+        top: 335px;
+        left: 315px;
+      }
+      @media screen and (max-width: 785px) {
+        top: 335px;
+        left: 314px;
+      }
+      @media screen and (max-width: 505px) {
+        width: 77px;
+        height: 52px;
+        font: 900 33px/48px Lato;
+        top: 282px;
+        left: 190px;
+      }
+      @media screen and (max-width: 405px) {
+        top: 244px;
+        left: 149px;
+      }
       &::before {
         content: "";
         position: absolute;
@@ -100,6 +201,9 @@
         border-top: 1px dashed #8d8d8d;
         left: 7px;
         top: -61px;
+        @media screen and (max-width: 405px) {
+          display: none;
+        }
       }
       &::after {
         content: "";
@@ -118,6 +222,7 @@
     align-items: center;
     max-width: 605px;
     width: 100%;
+    padding-right: 15px;
     .result {
       margin-bottom: 44px;
       h2 {

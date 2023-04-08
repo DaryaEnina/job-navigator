@@ -47,6 +47,8 @@ const Resume = () => {
   const [language, setLanguage] = useState("");
   const [employment, setEmployment] = useState("");
   const [courses, setCourses] = useState("");
+  const [error, setError] = useState("");
+  const [disabled, setDisabled] = useState(true);
 
   const navigate = useNavigate();
 
@@ -60,15 +62,36 @@ const Resume = () => {
     return () => mediaQuery.removeEventListener("change", setMQuery);
   }, [mQuery]);
 
+  const checkValidation = () => {
+    if (
+      !position &&
+      !stack.length > 0 &&
+      !experience &&
+      !language.length > 0 &&
+      !employment &&
+      !approve
+    ) {
+      setError("Заполните все поля");
+      return false;
+    } else {
+      setError("");
+      return true;
+    }
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
-    resume.position = position;
-    resume.skills = stack;
-    resume.experience = experience;
-    resume.english = language;
-    resume.employment = employment;
-    navigate("/analysis");
+    console.log(checkValidation());
+    if (checkValidation()) {
+      resume.position = position;
+      resume.skills = stack;
+      resume.experience = experience;
+      resume.english = language;
+      resume.employment = employment;
+      navigate("/analysis");
+      localStorage.setItem("resume", JSON.stringify(resume));
+    }
   };
+
   return (
     <section className="resume">
       <div className="resume__wrapper">
@@ -278,6 +301,7 @@ const Resume = () => {
               />
             </div>
           </div>
+          <p className="error">{error}</p>
           <div className="form-agreement">
             <input
               type="checkbox"
@@ -291,7 +315,12 @@ const Resume = () => {
             <label htmlFor="approve"></label>
             <p>Я даю согласие на обработку персональных данных</p>
           </div>
-          <button type="submit" className="form__submit">
+
+          <button
+            type="submit"
+            className="form__submit"
+            onClick={() => checkValidation()}
+          >
             Результат
           </button>
         </form>

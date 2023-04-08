@@ -137,6 +137,7 @@ const Analysis = () => {
   }, []);
 
   useEffect(() => {
+    const resume = JSON.parse(localStorage.getItem("resume"));
     analyce(resume, jobList);
   }, [analyce]);
 
@@ -297,7 +298,7 @@ const Analysis = () => {
                 ""
               )}
               {neeвEnglishSecondRound.length > 0 ? (
-                <li>{`поднять уровень английского до: ${needEnglish.toString()}`}</li>
+                <li>{`поднять уровень английского до: ${neeвEnglishSecondRound.toString()}`}</li>
               ) : (
                 ""
               )}
