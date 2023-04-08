@@ -128,7 +128,9 @@
           }
         }
         .select__list {
-          width: 420px;
+          max-width: 420px;
+          width: 100%;
+          min-width: 200px;
           height: fit-content;
           filter: drop-shadow(3px 5px 6px rgba(149, 169, 240, 0.5));
           display: flex;
@@ -142,6 +144,9 @@
           cursor: pointer;
           overflow-y: scroll;
           cursor: pointer;
+          @media screen and (max-width: 785px) {
+            top: 35px;
+          }
 
           p {
             width: 100%;
