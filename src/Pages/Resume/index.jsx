@@ -201,8 +201,12 @@ const Resume = () => {
                 value={stack}
               />
               <div className={selectStack ? "select__list" : "hide"}>
-                {vacancyStack.map((el) => {
-                  return <p onClick={() => setStack([...stack, el])}>{el}</p>;
+                {vacancyStack.map((el, i) => {
+                  return (
+                    <p key={i} onClick={() => setStack([...stack, el])}>
+                      {el}
+                    </p>
+                  );
                 })}
               </div>
             </div>
